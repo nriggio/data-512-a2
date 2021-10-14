@@ -134,6 +134,8 @@ The final data is contained in 2 CSV files each formatted as follows:
 <!-- REFLECTIONS & IMPLICATIONS -->
 ## Reflections & Implications:
 
+Overall, I found this process of this assignment to exercise to be very interesting. I enjoyed that some of my expectations for the analysis outcomes held up while others did not in ways I hadn’t initially anticipated, particularly when looking at article-per-population. This experience gave me some ideas on how to enhance and expand this analysis to get a more complete picture on the relationship between population and article count/quality on English Wikipedia. See continued below for further discussion of my reflections throughout this process: 
+
 __What biases did you expect to find in the data (before you started working with it), and why?__
 
 Prior to working with this data, I expected to see a bias towards countries with a higher proportion of English for both articles-per-population and high-quality article proportion on English Wikipedia. I assumed this would result in higher scores for countries/regions in North America and across Europe. My reasoning for this was that people from these areas would be more likely to see benefit from more, higher quality articles on English Wikipedia.
@@ -164,7 +166,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact:
 
 Nicole Riggio - riggionicole@gmail.com
-
 Project Link: [https://github.com/nriggio/data-512-a2](https://github.com/nriggio/data-512-a2)
 
 
