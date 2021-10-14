@@ -166,6 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact:
 
 Nicole Riggio - riggionicole@gmail.com
+
 Project Link: [https://github.com/nriggio/data-512-a2](https://github.com/nriggio/data-512-a2)
 
 
