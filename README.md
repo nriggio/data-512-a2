@@ -115,6 +115,7 @@ Any preliminary data is contained in 6 CSV files as briefly described below. The
 The final data is contained in 2 CSV files each formatted as follows:
 
 * Data Structure:
+
 | Column               | Description                                           |
 |----------------------|-------------------------------------------------------|
 | country              | Country name                                          |
