@@ -130,6 +130,8 @@ The final data is contained in 2 CSV files each formatted as follows:
 * Filename: `wp_wpds_politicians_by_country.csv`
 * Brief Description: contains any rev_ids that were mapped to both an ORES score and a country
 
+<!-- REFLECTIONS & IMPLICATIONS -->
+## Reflections & Implications:
 
 <!-- LICENSE -->
 ## License:
