@@ -134,21 +134,23 @@ The final data is contained in 2 CSV files each formatted as follows:
 <!-- REFLECTIONS & IMPLICATIONS -->
 ## Reflections & Implications:
 
-What biases did you expect to find in the data (before you started working with it), and why?
+__What biases did you expect to find in the data (before you started working with it), and why?__
 
-Prior to working with this data, I expected to see a bias towards countries with a higher proportion of English for both articles-per-population and high-quality article proportion on English Wikipedia. I assumed this would result in higher scores for countries/regions in North America and across Europe. My reasoning for this was that people from these areas would be more likely to see benefit from more, higher quality articles on English Wikipedia. 
-I assumed we would see higher relative quality coverage for countries with increased levels of social or political unrest within the past few decades. This could be a result of more people looking for this type of information and contributing to article quality.
-I also expect to see a bias towards more coverage for countries with increased internet accessibility – this could be due to a larger segment of the population engaging with Wikipedia in general. I anticipated lower coverage rates for smaller countries or those with relatively less English speakers.
+Prior to working with this data, I expected to see a bias towards countries with a higher proportion of English for both articles-per-population and high-quality article proportion on English Wikipedia. I assumed this would result in higher scores for countries/regions in North America and across Europe. My reasoning for this was that people from these areas would be more likely to see benefit from more, higher quality articles on English Wikipedia.
 
-What might your results suggest about the internet and global society in general?
+I assumed we would see higher relative quality coverage for countries with increased levels of social or political unrest within the past few decades. This could be a result of more people looking for this type of information and contributing to article quality. I also expected to see a bias towards more coverage for countries with increased internet accessibility – this could be due to a larger segment of the population engaging with Wikipedia in general. I anticipated lower coverage rates for smaller countries or those with relatively less English speakers.
+
+__What might your results suggest about the internet and global society in general?__
 
 The results suggested that I had underestimated the presence of articles-per-population for smaller countries – my anticipated results were actually the opposite of what the analysis showed for “top 10 countries by coverage” where the largest country in that group was Iceland with a population of 368k. Upon further review, this could be due to a few confounding factors such as proportion of the population that are politicians. For example, as per [Wikipedia](https://en.wikipedia.org/wiki/Parliament_of_Tuvalu), Tuvalu (the top country by coverage) has 16 seats in parliament for a population of 10k. If that ratio held true for the population of the United States, we would have over 500k seats in our legislative body.
+
 Despite this, the results for relative quality of article were aligned with my expectations. Anecdotally, I would argue that much of the “top 10 countries by relative quality” are countries that are frequently in the English media such as North Korea or Syria, which may correlate with higher quality articles.
 In general, these results have inherent limitations, I would not attempt to draw conclusions on worldwide Wikipedia usage or article quality. Any discussion of this data should note the English-language bias in the results.
 
-How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
+__How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?__
 
 If a researcher wanted to correct for some of these limitations, they could perform some normalization on estimated proportion of politicians in the population before looking at coverage as defined by article-per-population. It would be interesting to see if this analysis would result in some larger countries in the top 10, as discussed earlier, our entire “top 10 countries by coverage” is made up of countries in the smallest 20% by population.
+
 If the goal was to generalize these results to Wikipedia usage or article quality on a global scale, a researcher could pull article quality scores for a range of Wikipedia projects rather than limiting their analysis to enwiki. This could pose a challenge in joining on politician name or even country across languages as well as in getting a valid ORES score but it would be interesting to explore further.
 
 
