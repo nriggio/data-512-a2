@@ -65,38 +65,70 @@ The raw data is contained in 2 CSV files formatted as follows:
 * Filename: `page_data.csv`
 * Data Structure:
 
+| Column  | Description                                           |
+|---------|-------------------------------------------------------|
+| page    | Wikipedia article name associated with politician     |
+| country | Country name associated with politician               |
+| rev_id  | Revision ID associated with a given Wikipedia article |
+
 * Filename: `WPDS_2020_data.csv`
 * Data Structure:
+
+| Column     | Description                                      |
+|------------|--------------------------------------------------|
+| FIPS       | Country code or Region name                      |
+| Name       | Geographic name (such as Country or Region name) |
+| Type       | Geographic type (World, Sub-Region, Country)     |
+| TimeFrame  | Population year                                  |
+| Data (M)   | Population in Millions by type                   |
+| Population | Population by type                               |
 
 ### Prelim Data:
 Any preliminary data is contained in 6 CSV files as briefly described below. The most notable of which is `country_region_mapping.csv` for which you can see the data structure below. A more complete discussion of the other intermediary files can be found in `hcds-a2-bias.ipynb`.
 
 * Filename: `country_prelim.csv`
-* Brief Description:
+* Brief Description: contains all country entries (including the Channel Islands) from `WPDS_2020_data.csv` 
 
 * Filename: `country_region_mapping.csv`
 * Data Structure:
 
+| Column             | Description                      |
+|--------------------|----------------------------------|
+| country            | Country name                     |
+| country_population | Country population               |
+| region             | Region name                      |
+| region_population  | Population for the entire region |
+
 * Filename: `no_ORES_scores.csv`
-* Brief Description:
+* Brief Description: all articles / rev_ids for which an ORES score is NOT found
 
 * Filename: `ORES_scores.csv`
-* Brief Description:
+* Brief Description: all articles / rev_ids for which an ORES score is found
 
 * Filename: `politicians_prelim.csv`
-* Brief Description:
+* Brief Description: cleaned `page_data.csv` to remove non-article entries (occurs where `page` begins with 'Template:')
 
 * Filename: `region_prelim.csv`
-* Brief Description:
+* Brief Description: contains all region entries (identified as any `Type` in ALL CAPS) from `WPDS_2020_data.csv` 
 
 ### Final Data:
-The final data is contained in 2 CSV files formatted as follows:
+The final data is contained in 2 CSV files each formatted as follows:
+
+* Data Structure:
+| Column               | Description                                           |
+|----------------------|-------------------------------------------------------|
+| country              | Country name                                          |
+| article_name         | Wikipedia article name associated with politician     |
+| revision_id          | Revision ID associated with a given Wikipedia article |
+| article_quality_est. | ORES score (FA, GA, B, C, Start, Stub)                |
+| population           | Population by country                                 |
 
 * Filename: `wp_wpds_countries-no_match.csv`
-* Data Structure:
+* Brief Description: contains any rev_ids WITH A SCORE that were unable to be mapped by country
+* Note: for rev_ids WITHOUT A SCORE check `prelim_data/no_ORES_scores.csv`
 
 * Filename: `wp_wpds_politicians_by_country.csv`
-* Data Structure:
+* Brief Description: contains any rev_ids that were mapped to both an ORES score and a country
 
 
 <!-- LICENSE -->
@@ -123,6 +155,6 @@ Project Link: [https://github.com/nriggio/data-512-a2](https://github.com/nriggi
 * [WPDS_2020_data.csv (sourced from above)](https://docs.google.com/spreadsheets/d/1CFJO2zna2No5KqNm9rPK5PCACoXKzb-nycJFhV689Iw/edit?usp=sharing)
 * [Wikipedia Content Assessment Guidelines](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment)
 * [ORES REST API Documentation](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model)
-* ['batches' Function Help]((https://www.geeksforgeeks.org/break-list-chunks-size-n-python/)
+* [batches Function Help]((https://www.geeksforgeeks.org/break-list-chunks-size-n-python/)
 * [MIT License](https://opensource.org/licenses/MIT)
 * [Best-README-Template: othneildrew](https://github.com/othneildrew/Best-README-Template)
