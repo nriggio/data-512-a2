@@ -155,6 +155,6 @@ Project Link: [https://github.com/nriggio/data-512-a2](https://github.com/nriggi
 * [WPDS_2020_data.csv (sourced from above)](https://docs.google.com/spreadsheets/d/1CFJO2zna2No5KqNm9rPK5PCACoXKzb-nycJFhV689Iw/edit?usp=sharing)
 * [Wikipedia Content Assessment Guidelines](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment)
 * [ORES REST API Documentation](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model)
-* [batches Function Help]((https://www.geeksforgeeks.org/break-list-chunks-size-n-python/)
+* ['batches' Function Help](https://www.geeksforgeeks.org/break-list-chunks-size-n-python/)
 * [MIT License](https://opensource.org/licenses/MIT)
 * [Best-README-Template: othneildrew](https://github.com/othneildrew/Best-README-Template)
